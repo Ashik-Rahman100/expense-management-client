@@ -1,12 +1,12 @@
-import ExpenseForm from "@/components/ExpenseForm";
+import ExpenseSummary from "@/components/ExpenseSummary";
 import styles from './page.module.css';
-import Summary from "./summary/page";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <ExpenseForm />
-      <Summary />
+      {/* <ExpenseForm />
+      <Summary /> */}
+      <ExpenseSummary />
     </main>
   );
 }
