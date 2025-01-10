@@ -1,18 +1,20 @@
 'use client'
 
+import { useAddExpensessMutation } from '@/redux/feature/expense.api'
 import { useState } from 'react'
 import styles from './ExpenseForm.module.css'
 
 const categories = ['Groceries', 'Transportation', 'Healthcare', 'Utility', 'Charity', 'Miscellaneous']
 
 export default function ExpenseForm() {
+    const  [addExpenses, {isLoading}] = useAddExpensessMutation()
 //   const dispatch = useDispatch()
   const [category, setCategory] = useState('')
   const [amount, setAmount] = useState('')
   const [purpose, setPurpose] = useState('')
 //   const spendingLimits = useSelector((state) => state.expenses.spendingLimits)
 
-  const handleSubmit = (e) => {
+  const handleSubmit =async  (e) => {
     e.preventDefault()
     if (!category || !amount || !purpose) return
 
@@ -29,12 +31,13 @@ export default function ExpenseForm() {
       category,
       amount: numAmount,
       purpose,
-      date: new Date().toISOString(),
+    //   date: new Date().toISOString(),
     };
 
     console.log("expense", newExpense)
 
-    // dispatch(addExpense(newExpense))
+    await addExpenses(newExpense);
+
     setCategory('')
     setAmount('')
     setPurpose('')

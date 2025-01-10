@@ -1,0 +1,46 @@
+.summary {
+  width: 100%;
+  max-width: 600px;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.dateGroup {
+  margin-bottom: 2rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.date {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.category {
+  margin-bottom: 1rem;
+}
+
+.categoryTitle {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.expense {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  color: #333;
+  cursor: help;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  text-align: right;
+}

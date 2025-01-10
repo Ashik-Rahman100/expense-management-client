@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "7f93503d-2c53-4448-862c-87f6bc0c80a2",
+		"name": "expense-Tracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25360666"
+	},
+	"item": [
+		{
+			"name": "Post Limit",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Limit",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create expense",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "all expenses",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update expenses",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\":100,\r\n    \"category\":\"Transportation\",\r\n    \"purpose\":\"Transportation for the week\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/expenses/67811f0b4e24aee9c61e8df5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"expenses",
+						"67811f0b4e24aee9c61e8df5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete expenses",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
